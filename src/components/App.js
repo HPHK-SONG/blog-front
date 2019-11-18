@@ -19,7 +19,7 @@ export default function App() {
   };
   return (
     <BrowserRouter>
-      <Nav />
+      <Nav {...auth} />
       <Header />
       <Route exact path="/" component={Home} />
       <Route

@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 import { baseURL } from '../config';
 
 export default function Login({
-  isLoggedIn,
   setIsLoggedIn,
   setIsAdmin,
 }) {
