@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ReactMarkdown from 'react-markdown';
+
 import { baseURL } from '../common/config';
 
 export default function Post({ match }) {
@@ -15,7 +17,7 @@ export default function Post({ match }) {
   return (
     <>
       <h1>{post && post.title}</h1>
-      <p>{post && post.contents}</p>
+      {post && <ReactMarkdown source={post.contents} />}
     </>
   );
 }
